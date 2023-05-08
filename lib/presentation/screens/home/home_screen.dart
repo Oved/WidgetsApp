@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 
@@ -57,8 +58,9 @@ class _CustomListTile extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       onTap: () {
         // Navigator.of(context).push(
-        //     MaterialPageRoute(builder: (context) => const ButtonsScreen()));
-        Navigator.pushNamed(context, menuItem.link);
+        //     MaterialPageRoute(builder: (context) => const ButtonsScreen()));  /Una manera de navegar entre screens
+        // Navigator.pushNamed(context, menuItem.link);  //Otra manera de nevegar entre screens
+        context.push(menuItem.link);
       },
     );
   }
