@@ -6,6 +6,7 @@ import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 import '../../../config/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String name = 'home_screen';
   const HomeScreen({super.key});
 
   @override
@@ -60,6 +61,7 @@ class _CustomListTile extends StatelessWidget {
         // Navigator.of(context).push(
         //     MaterialPageRoute(builder: (context) => const ButtonsScreen()));  /Una manera de navegar entre screens
         // Navigator.pushNamed(context, menuItem.link);  //Otra manera de nevegar entre screens
+        //  context.pushNamed(CardsScreen.name);
         context.push(menuItem.link);
       },
     );
