@@ -4,6 +4,7 @@ import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 
 import '../../../config/menu/menu_items.dart';
+import '../../widgets/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String name = 'home_screen';
@@ -16,7 +17,8 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter + Material 3'),
         centerTitle: false,
       ),
-      body: _HomeView(),
+      body: const _HomeView(),
+      drawer: const SideMenu(),
     );
   }
 }
