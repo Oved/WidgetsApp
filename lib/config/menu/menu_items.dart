@@ -49,5 +49,10 @@ const appMenuItems = <MenuItems>[
       subTitle: 'Introducción a la aplicación',
       link: '/tutorial',
       icon: Icons.live_help_outlined),
+  MenuItems(
+      title: 'Infinite Scroll y Pull',
+      subTitle: 'Listas infinitas y pull to refresh',
+      link: '/infinite',
+      icon: Icons.list_alt_outlined),
   //MenuItems(title: 'Botones', subTitle: 'Varios botones en Flutter', link: '/buttons', icon: Icons.smart_button_outlined),
 ];
